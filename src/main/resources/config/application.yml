@@ -7,3 +7,6 @@ spring:
       suffix: .html
     favicon:
       enabled: false
+
+NPY :
+  dirPath : /tmp

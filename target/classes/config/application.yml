@@ -1,0 +1,13 @@
+server:
+  port: 13333
+spring:
+  mvc:
+    view:
+      prefix: /page/
+      suffix: .html
+    favicon:
+      enabled: false
+
+NPY :
+  trueDirPath : /root/data/lightningFileGrid/
+  modelPath : /root/data/lightningFileGrid/ # 模型的根目录 请以模型名称命名 例如 ADSNet
