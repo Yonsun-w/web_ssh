@@ -1,6 +1,9 @@
-package org.example.util;
+package cn.objectspace.webssh.utils;
 
-import org.springframework.http.*;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
@@ -11,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 public class HttpUtils {
     // 类主体部分
     private static final RestTemplate restTemplate = new RestTemplate();
+
 
     public static <T> T sendRequest(String url, HttpMethod method, HttpHeaders headers, Object body, Class<T> responseType) throws RestClientException {
         HttpEntity<Object> requestEntity = new HttpEntity<>(body, headers);

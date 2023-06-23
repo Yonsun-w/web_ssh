@@ -1,8 +1,8 @@
 FROM openjdk:8-jdk-alpine
 
-VOLUME /tmp
+VOLUME /tmp /test
 
-COPY ./app.jar commo-sonarsync-job.jar
+COPY ./target/WebSSH.jar commo-sonarsync-job.jar
 
 EXPOSE 80
 

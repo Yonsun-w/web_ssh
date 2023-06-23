@@ -1,14 +1,6 @@
-package org.example.utils;
+package cn.objectspace.webssh.utils;
 
-import org.springframework.util.CollectionUtils;
-import org.yaml.snakeyaml.util.ArrayUtils;
-
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.file.Files;
@@ -86,10 +78,5 @@ public class NDArrayIOUtils {
         return b.array();
     }
 
-    public static void main(String[] args) throws IOException {
-        float[] a = readNpyFile("/Users/yonsun/202007111650_h0.npy");
-
-        System.out.println(a.length);
-    }
 
 }
