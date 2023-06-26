@@ -8,6 +8,10 @@ spring:
     favicon:
       enabled: false
 
+# 后续模型的配置相关
 NPY :
   trueDirPath : /root/data/lightningFileGrid/
   modelPath : /root/data/lightningFileGrid/ # 模型的根目录 请以模型名称命名 例如 ADSNet
+
+MAP :
+  AK : WkQm52ps4kw23O9DuEI0PqRdhKOja8zM

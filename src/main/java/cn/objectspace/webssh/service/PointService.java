@@ -24,11 +24,15 @@ import java.util.regex.Pattern;
 @Service
 public class PointService {
     //经纬度
-    String url = "https://api.map.baidu.com/reverse_geocoding/v3/?ak=WkQm52ps4kw23O9DuEI0PqRdhKOja8zM&output=json&coordtype=wgs84ll&location=%s,%s";
-    // 类主体部分
     final int left = 113, bottom = 37, right = 120, top = 42;
     @Value("${NPY.trueDirPath}")
     String trueDirPath;
+
+    @Value("${MAP.AK}")
+    String BaiduMapAk;
+
+    String url = "https://api.map.baidu.com/reverse_geocoding/v3/?ak="+ BaiduMapAk +"&output=json&coordtype=wgs84ll&location=%s,%s";
+
 
     public Map<String, Integer> getCityPointsNumber(String time) throws Exception {
         List<List<String>> list = getPoints(time);

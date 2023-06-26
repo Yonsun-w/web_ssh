@@ -2,10 +2,7 @@ package cn.objectspace.webssh.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @(#)ConfigController.java, 5月 11, 2023.
@@ -15,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @wenjiahua
  */
 @RestController
+@CrossOrigin
 public class ConfigController {
     // 类主体部分
 
